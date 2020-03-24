@@ -2,4 +2,4 @@
 ## Mathematics with Computer Science
 ### Purdue University '22
 
-Please click <a href="https://solzilberman.github.io/Personal/">Me</a> for full project directory and personal site.
+Please click <a href="https://solzilberman.github.io/Personal/">here</a> for full project directory and personal site.
