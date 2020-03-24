@@ -2,4 +2,4 @@
 ## Mathematics with Computer Science
 ### Purdue University '22
 
-Please visit <a href="./bubbleSortVisualized/index.html">Bubble Sort Visualized</a> for full project directory and personal site.
+Please click <a href="https://solzilberman.github.io/Personal/">Me</a> for full project directory and personal site.
