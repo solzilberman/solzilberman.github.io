@@ -2,14 +2,134 @@
 	<head>
 		<title>Three.js Boilerplate</title>
         <link rel="icon" href="data:;base64,=">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 		<style>
-			body { margin: 0; }
-			canvas { width: 640px; height: 360px }
+			body { 
+                font-family: Ubuntu, "times new roman", times, roman, serif;
+                margin: 0; 
+            }
+			canvas { width: 600px; height: 360px }
+            #hello{
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 30px;
+                color: #fff;
+                text-align: center;
+                width: 100%;
+            }
+            img:hover {
+                -moz-transform: scale(1.25,1.25);
+                -webkit-transform:  scale(1.25,1.25);
+                -ms-transform:  scale(1.25,1.25);
+                transform:  scale(1.25,1.25);
+            }
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .box {
+            /* border: 2px solid red; */
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            }
+            #helloTitle{
+                /* font-size: 30px;
+                color: #fff;
+                text-align: center;
+                width: 100%; */
+                margin: 0px;
+            }
+            #helloTitle:hover{
+                /* -moz-transform: scale(1.05,1.05);
+                -webkit-transform:  scale(1.05,1.05);
+                -ms-transform:  scale(1.05,1.05);
+                transform:  scale(1.05,1.05); */
+            }
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+            #titleDiv{
+                display: flex;
+                flex-direction: column; 
+                align-items: center;
+                align-content: center;
+                /* margin: 5px; */
+            }
+            #desc{
+                font-size: 20px;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                font-family: sans-serif;
+                width: 100%;
+                width: 70%;
+                margin: 0px;
+                text-decoration: solid;
+            }
+            #iconDiv{
+                margin: 20px;
+            }
 		</style>
 	</head>
 	<body>
+        <div id="hello">
+            <h1 id="helloTitle">Hello, World!</h1>
+            <div id="titleDiv">
+                <code id="desc">
+                    My name is Sol Zilberman and I am an incoming PhD student at Michigan State University interested in computer simulation, high assurance computing and evolutionary computation.
+                </code>
+            </div>
+            <div id="iconDiv">
+                <a href="https://github.com/solzilberman">
+                    <img 
+                    id="ex1-layer"
+                    src="icons/Github.svg" 
+                    alt="triangle with all three sides equal"
+                    height="87px"
+                    width="100px" />
+                </a>
+                <a href="https://www.linkedin.com/in/solzilberman/">
+                    <img 
+                    id="ex1-layer"
+                    src="icons/LinkedIN.svg" 
+                    alt="triangle with all three sides equal"
+                    height="87px"
+                    width="100px" />
+                </a>
+                <a href="mailto:sol.zilberman@gmail.com">
+                    <img 
+                    id="ex1-layer"
+                    src="icons/Gmail.svg" 
+                    alt="triangle with all three sides equal"
+                    height="87px"
+                    width="100px" />
+                </a>
+                <a href="https://www.youtube.com/channel/UCjvjTn4a0NI1BW7V-OEUH_A">
+                    <img 
+                    id="ex1-layer"
+                    src="icons/Youtube.svg" 
+                    alt="triangle with all three sides equal"
+                    height="87px"
+                    width="100px" />
+                </a>
+                <a href="https://medium.com/@sol.zilberman">
+                    <img 
+                    id="ex1-layer"
+                    src="icons/Medium.svg" 
+                    alt="triangle with all three sides equal"
+                    height="87px"
+                    width="100px" />
+                </a>
+            </div>
+        </div>
 		<script src="vendor/three.js"></script>
         <script src="vendor/OrbitControls.js"></script>
+		<script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
+        <script src="vendor/perlin.js"></script>
 		<script src="shaders/shaders.js"></script>
 		<script src="/index.js"></script>
 	</body>
