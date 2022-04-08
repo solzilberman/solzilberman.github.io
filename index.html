@@ -1,136 +1,64 @@
 <html>
-	<head>
-		<title>Three.js Boilerplate</title>
-        <link rel="icon" href="data:;base64,=">
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
-		<style>
-			body { 
-                font-family: Ubuntu, "times new roman", times, roman, serif;
-                margin: 0; 
-            }
-			canvas { width: 600px; height: 360px }
-            #hello{
-                position: absolute;
-                top: 30%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                font-size: 30px;
-                color: #fff;
-                text-align: center;
-                width: 100%;
-            }
-            img:hover {
-                -moz-transform: scale(1.25,1.25);
-                -webkit-transform:  scale(1.25,1.25);
-                -ms-transform:  scale(1.25,1.25);
-                transform:  scale(1.25,1.25);
-            }
-            .container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .box {
-            /* border: 2px solid red; */
-            height: 100px;
-            width: 100px;
-            position: absolute;
-            }
-            #helloTitle{
-                /* font-size: 30px;
-                color: #fff;
-                text-align: center;
-                width: 100%; */
-                margin: 0px;
-            }
-            #helloTitle:hover{
-                /* -moz-transform: scale(1.05,1.05);
-                -webkit-transform:  scale(1.05,1.05);
-                -ms-transform:  scale(1.05,1.05);
-                transform:  scale(1.05,1.05); */
-            }
-            a{
-                text-decoration: none;
-                color: #fff;
-            }
-            #titleDiv{
-                display: flex;
-                flex-direction: column; 
-                align-items: center;
-                align-content: center;
-                /* margin: 5px; */
-            }
-            #desc{
-                font-size: 20px;
-                color: rgb(255, 255, 255);
-                text-align: center;
-                font-family: sans-serif;
-                width: 100%;
-                width: 70%;
-                margin: 0px;
-                text-decoration: solid;
-            }
-            #iconDiv{
-                margin: 20px;
-            }
-		</style>
-	</head>
-	<body>
-        <div id="hello">
-            <h1 id="helloTitle">Hello, World!</h1>
-            <div id="titleDiv">
-                <code id="desc">
-                    My name is Sol Zilberman and I am an incoming PhD student at Michigan State University interested in computer simulation, high assurance computing and evolutionary computation.
+
+<head>
+    <title>Three.js Boilerplate</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="assets/fonts/ubuntuBold/stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" type="text/css" charset="utf-8" />
+</head>
+
+<body>
+    <div id="hello">
+        <h1 id="helloTitle">Hello, World!</h1>
+        <div id="titleDiv">
+            <code id="desc">
+                    My name is Sol Zilberman and I am an incoming PhD student at Michigan State University interested in swarm intelligence, high assurance computing and evolutionary computation.
                 </code>
-            </div>
-            <div id="iconDiv">
-                <a href="https://github.com/solzilberman">
-                    <img 
-                    id="ex1-layer"
-                    src="icons/Github.svg" 
-                    alt="triangle with all three sides equal"
-                    height="87px"
-                    width="100px" />
-                </a>
-                <a href="https://www.linkedin.com/in/solzilberman/">
-                    <img 
-                    id="ex1-layer"
-                    src="icons/LinkedIN.svg" 
-                    alt="triangle with all three sides equal"
-                    height="87px"
-                    width="100px" />
-                </a>
-                <a href="mailto:sol.zilberman@gmail.com">
-                    <img 
-                    id="ex1-layer"
-                    src="icons/Gmail.svg" 
-                    alt="triangle with all three sides equal"
-                    height="87px"
-                    width="100px" />
-                </a>
-                <a href="https://www.youtube.com/channel/UCjvjTn4a0NI1BW7V-OEUH_A">
-                    <img 
-                    id="ex1-layer"
-                    src="icons/Youtube.svg" 
-                    alt="triangle with all three sides equal"
-                    height="87px"
-                    width="100px" />
-                </a>
-                <a href="https://medium.com/@sol.zilberman">
-                    <img 
-                    id="ex1-layer"
-                    src="icons/Medium.svg" 
-                    alt="triangle with all three sides equal"
-                    height="87px"
-                    width="100px" />
-                </a>
-            </div>
         </div>
-		<script src="vendor/three.js"></script>
-        <script src="vendor/OrbitControls.js"></script>
-		<script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
-        <script src="vendor/perlin.js"></script>
-		<script src="shaders/shaders.js"></script>
-		<script src="/index.js"></script>
-	</body>
+        <div id="iconDiv">
+            <a href="https://github.com/solzilberman">
+                <img id="ex1-layer" src="assets/icons/Github.svg" alt="triangle with all three sides equal" height="87px"
+                    width="100px" />
+            </a>
+            <a href="https://www.linkedin.com/in/solzilberman/">
+                <img id="ex1-layer" src="assets/icons/LinkedIN.svg" alt="triangle with all three sides equal" height="87px"
+                    width="100px" />
+            </a>
+            <a href="mailto:sol.zilberman@gmail.com">
+                <img id="ex1-layer" src="assets/icons/Gmail.svg" alt="triangle with all three sides equal" height="87px"
+                    width="100px" />
+            </a>
+            <a href="https://www.youtube.com/channel/UCjvjTn4a0NI1BW7V-OEUH_A">
+                <img id="ex1-layer" src="assets/icons/Youtube.svg" alt="triangle with all three sides equal" height="87px"
+                    width="100px" />
+            </a>
+            <a href="https://medium.com/@sol.zilberman">
+                <img id="ex1-layer" src="assets/icons/Medium.svg" alt="triangle with all three sides equal" height="87px"
+                    width="100px" />
+            </a>
+        </div>
+    </div>
+    <script src="vendor/three.js"></script>
+    <script src="vendor/OrbitControls.js"></script>
+    <script src="vendor/perlin.js"></script>
+    <script src="shaders/shaders.js"></script>
+    <script src="/index.js"></script>
+</body>
+
 </html>

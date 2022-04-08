@@ -1,7 +1,7 @@
 const _vertPhong = `
 varying vec2 vUv;
-out vec3 norm;
-out vec3 pos;
+varying vec3 norm;
+varying vec3 pos;
 void main(){
     vUv = uv;
     gl_Position = projectionMatrix * viewMatrix * modelMatrix * vec4( position, 1.0 );
@@ -11,8 +11,8 @@ void main(){
 `
 const _fragPhong = `
 varying vec2 vUv;
-in vec3 norm;
-in vec3 pos;
+varying vec3 norm;
+varying vec3 pos;
 uniform float time;
 uniform vec3 Ka;
 uniform vec3 Kd;
@@ -40,7 +40,7 @@ void main(){
     vec3 colA = vec3(0.0,0.1,0);
     vec3 colB = vec3(0,1.0,0.0);
     vec2 st = vUv;
-    float mixValue = distance(st, vec2(0, 0));
+    float mixValue = distance(st, vec2(1, 1));
 
     vec3 color = mix(colA, colB, mixValue);
         
@@ -50,8 +50,14 @@ void main(){
 
 // basic shaders
 const _vertBasic = `
+#ifdef GL_FRAGMENT_PRECISION_HIGH
+    precision highp float;
+#else
+    precision mediump float;
+#endif
+
 varying vec2 vUv;
-out vec3 pos;
+varying vec3 pos;
 void main(){
     vUv = uv;
     pos = position;
@@ -59,13 +65,20 @@ void main(){
 }
 `
 const _fragBasic = `
+#ifdef GL_FRAGMENT_PRECISION_HIGH
+    precision highp float;
+#else
+    precision mediump float;
+#endif
+
 varying vec2 vUv;
-in vec3 pos;
+varying vec3 pos;
 uniform float time;
 void main(){
     vec3 colA = vec3(0,1,0);
-    vec3 colB = vec3(0,0,0);
-    float z = (pos.z)/5.0;
-    gl_FragColor = vec4(mix(colA,colB,z),1);
+    vec3 colB = vec3(0,0.75,0);
+    float z = (pos.z)/2.0;
+    vec3 col = mix(colB,colA,z);
+    gl_FragColor = vec4(col,1);
 }
 `
