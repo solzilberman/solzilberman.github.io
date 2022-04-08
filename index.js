@@ -21,7 +21,7 @@ controls.minPolarAngle = 0.75; // radians
 controls.maxPolarAngle = 1.0; // radians
 controls.minAzimuthAngle = -Math.PI / 16.0; // radians
 controls.maxAzimuthAngle = Math.PI / 16.0; // radians
-controls.rotateSpeed = 0.05;
+controls.rotateSpeed = 0.075;
 controls.enableZoom = false;
 controls.update();
 // first mouse pos

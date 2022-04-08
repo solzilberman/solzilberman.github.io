@@ -76,3 +76,14 @@ a {
 #iconDiv {
     margin: 20px;
 }
+
+#instructions{
+    font-size: 65%;
+    font-family: Ubuntu;
+    text-align: center;
+    margin: 20px;
+    text-align: left;
+    position: fixed;
+    bottom: 10px;
+    text-decoration: solid;
+}
