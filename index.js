@@ -23,6 +23,7 @@ controls.minAzimuthAngle = -Math.PI / 16.0; // radians
 controls.maxAzimuthAngle = Math.PI / 16.0; // radians
 controls.rotateSpeed = 0.075;
 controls.enableZoom = false;
+controls.enablePan = false;
 controls.update();
 // first mouse pos
 mouseX = camera.position.x;
