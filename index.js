@@ -180,3 +180,9 @@ function onWindowResize(){
     camera.updateProjectionMatrix();
     renderer.setSize( window.innerWidth, window.innerHeight );
 }
+
+
+var switchMeshButton = document.getElementById("instructions");
+switchMeshButton.addEventListener("click", function () {
+    terrain.material.wireframe = !terrain.material.wireframe;
+}); 
