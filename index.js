@@ -9,7 +9,7 @@ const raycaster = new THREE.Raycaster();
 var scene = new THREE.Scene();
 scene.background = new THREE.Color(0x42cbf5);
 var camera = new THREE.PerspectiveCamera(95, window.innerWidth / window.innerHeight, 0.1, 1000);
-camera.position.set(0, 5, 10);
+camera.position.set(0, 5, 15);
 camera.lookAt(0, 5, 10);
 var renderer = new THREE.WebGL1Renderer();
 renderer.shadowMapEnabled = true;
@@ -17,11 +17,12 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 var controls = new THREE.OrbitControls(camera, renderer.domElement);
 
-controls.minPolarAngle = -Math.PI/16; // radians
+controls.minPolarAngle = 0.75; // radians
 controls.maxPolarAngle = 1.0; // radians
 controls.minAzimuthAngle = -Math.PI / 16.0; // radians
 controls.maxAzimuthAngle = Math.PI / 16.0; // radians
-controls.dampingFactor = 0.25;;
+controls.rotateSpeed = 0.05;
+controls.enableZoom = false;
 controls.update();
 // first mouse pos
 mouseX = camera.position.x;
@@ -132,10 +133,7 @@ function clamp(value, min, max) {
 }
 
 var animate = function () {
-    frameCount += .05;
-    requestAnimationFrame(animate);
-    renderer.render(scene, camera);
-
+    
     //terrain
     // terrainMaterial.uniforms.time.value = frameCount;
     // knotShaderMaterial.uniforms.time.value = frameCount;
@@ -148,13 +146,15 @@ var animate = function () {
     terrain.geometry.attributes.position.needsUpdate = true;
 
     //icosohedron
-    target.x += (mouseX - target.x) * .25;
-    target.y += (- mouseY - target.y) * .25;
-    target.z = camera.position.z; // assuming the camera is located at ( 0, 0, z );
-    icosMesh.lookAt(target);
-
+    // target.x += (mouseX - target.x) * .25;
+    // target.y -= (- mouseY - target.y) * .25;
+    // target.z = camera.position.z; // assuming the camera is located at ( 0, 0, z );
+    // terrain.lookAt(target);
     //go to mouse
-   
+    frameCount += .05;
+    requestAnimationFrame(animate);
+    renderer.render(scene, camera);
+    
 };
 animate();
 
