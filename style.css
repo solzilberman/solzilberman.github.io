@@ -1,0 +1,228 @@
+:root {
+    --text-color: #fff;
+}
+html, body {margin: 0; height: 100%;}
+body {
+    background-color: rgb(20, 20, 20);
+    font-family: 'Space Mono', monospace;
+    color: #d8d8d8;
+  }
+  .header {
+    text-align: center;
+    padding: 15px 0;
+    background-color: rgb(36, 34, 34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 20px; */
+    min-height: max-content;
+    gap: 100px;
+    /* margin-top: 20px; */
+     
+  }
+  .header img {
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 10px #999;
+    /* margin-top: 20px;
+    margin-bottom: 10px; */
+  }
+  .section {
+    padding: 50px 0;
+  }
+  .section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .section .section-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  ul {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    /* display: flex;
+      */
+    align-items: center;
+    margin-bottom: 20px;
+    color: var(----text-color);
+  }
+  .two-column-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .left-list,
+  .right-list {
+    width: 45%;
+    list-style: circle;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  p {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: var(----text-color);
+    text-align: center;
+    /* width: 50%;
+      */
+    /* align to center of page */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .description {
+    font-size: 16px;
+    width: 35%;
+    /* font-family: Arial, sans-serif;
+      */
+    line-height: 1.5;
+    color: #999;
+    margin-bottom: 40px;
+    font-style: italic;
+    text-align: center;
+  }
+  .experience-section {
+    /* text-align: center;
+      */
+    padding: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .experience {
+    margin-bottom: 30px;
+    /* add thin bottom border */
+    border-bottom: 1px solid #999;
+    /* slight gap between border and content */
+    padding-bottom: 10px;
+  }
+  .experience-title {
+    display: flex;
+    justify-content: space-between;
+  }
+  .title-text {
+    font-weight: bold;
+  }
+  .title-company {
+    font-style: italic;
+    /* font-size: smaller;
+      */
+    color: gray;
+  }
+  .experience-description {
+    /* font-size: smaller;
+      */
+    color: gray;
+    margin-top: 10px;
+  }
+   
+  .social-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    color: var(----text-color);
+    text-decoration: none;
+  }
+
+  
+
+  
+  
+  @media screen and (max-width: 768px) {
+    html, body {margin: 0; height: 100%;}
+
+    body {
+      font-size: 14px;
+    }
+    .header {
+        padding: 20px 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .header img {
+      width: 100px;
+    }
+    .header h1 {
+      font-size: 28px;
+    }
+    .header p {
+      font-size: 16px;
+    }
+    .section {
+      padding: 20px 0;
+    }
+    .section h2 {
+      font-size: 20px;
+    }
+    .section .section-content {
+      max-width: 95%;
+    }
+    ul {
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 10px;
+      color: var(----text-color);
+    }
+    .two-column-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .left-list,
+    .right-list {
+      width: 100%;
+      list-style: circle;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    p {
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      color: var(----text-color);
+      text-align: center;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .description {
+      font-size: 14px;
+      width: 95%;
+      line-height: 1.5;
+      color: #999;
+      margin-bottom: 20px;
+      font-style: italic;
+      text-align: center;
+    }
+    .experience-section {
+      width: 95%;
+    }
+  }
+  
