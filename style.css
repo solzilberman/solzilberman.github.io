@@ -139,6 +139,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+    margin-left: 20px;
     color: var(----text-color);
     text-decoration: none;
   }
@@ -193,7 +194,7 @@ body {
     }
     .left-list,
     .right-list {
-      width: 100%;
+      width: 95%;
       list-style: circle;
       margin: 0;
       padding: 0;
@@ -208,7 +209,7 @@ body {
       line-height: 1.5;
       color: var(----text-color);
       text-align: center;
-      width: 100%;
+      width: 95%;
       margin-left: auto;
       margin-right: auto;
     }
@@ -222,7 +223,15 @@ body {
       text-align: center;
     }
     .experience-section {
-      width: 95%;
+      width: 95vw;
+      padding: 0px;
     }
   }
-  
+@media screen and (max-width: 640px)
+{
+    body, html{
+        width: 100vw;
+        overflow-x: hidden;
+        /* padding: 0.8em 0; */
+    }
+}
