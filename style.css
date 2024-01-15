@@ -1,5 +1,7 @@
 :root {
   --text-color: #535353;
+  --faded-text: #4b5563;
+  font-family: 'Inter', sans-serif;
 }
 
 html, body {
@@ -8,12 +10,23 @@ html, body {
 }
 
 body {
-  background-color: rgb(230, 230, 230);
-  font-family: 'Space Mono', monospace;
+  background-color: rgb(226, 226, 226);
+  /* font-family: 'Space Mono', monospace; */
+  font-family: 'Inter', sans-serif;
   color: #3f3f3f;
   font-size: small;
   margin: auto;
   max-width: 42rem;
+}
+
+h2{
+  /* font-size: 1.5rem; */
+  /* font-weight: 1000; */
+  /* make bold */
+  font-weight: bold;
+  /* make textsc */
+  /* font-variant-caps: small-caps; */
+
 }
 
 .header {
@@ -22,13 +35,34 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   min-height: max-content;
+  margin-top: 30px;
+}
+
+.header .header-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-start; */
+  /* vertically align center */
+  margin-top: auto;
+  margin-bottom: auto;
+  row-gap: 10px;
+}
+
+.header h2{
+  margin: 0px;
+}
+.header p{
+  margin: 0px;
+  color: var(--faded-text);
+  width: 90%;
 }
 
 .header img {
-  width: 100px;
+  width: 120px;
   border-radius: 10%;
-  border: 5px solid #fff;
-  box-shadow: 0 0 10px #999;
+  /* border: 5px solid #fff; */
+  /* box-shadow: 0 0 10px #999; */
   /* align vertically center */
   margin-top: auto;
   margin-bottom: 0px;
@@ -41,18 +75,21 @@ body {
 .section h2 {
   font-weight: bold;
   text-align: justify;
+  margin-bottom: 5px;
 }
 
 ul {
   margin: 0;
   padding-left: 0;
   text-align: left;
+
 }
 
 ul li {
   list-style-position: inside;
   margin-bottom: 20px;
-  color: var(--text-color);
+  color: #4b5563
+  /* color: var(--text-color); */
 }
 
 .two-column-list {
@@ -93,6 +130,7 @@ ul li {
 
 .experience-description {
   margin-top: 1px;
+  color: #4b5563
 }
 
 .social-icons-container {
@@ -116,9 +154,10 @@ ul li {
   }
 
   .header {
-      flex-direction: column-reverse; /* Reverse column order */
+      /* flex-direction: column-reverse; Reverse column order */
       align-items: center; /* Center items horizontally */
       text-align: center;
+      text-align: left;
   }
 
   .two-column-list {
@@ -135,14 +174,14 @@ ul li {
   }
 
   .social-icons-container {
-      flex-direction: row;
-      justify-content: center; /* Center icons horizontally */
-      align-content: center;
+      /* flex-direction: row; */
+      /* justify-content: center; Center icons horizontally */
+      /* align-content: center; */
   }
 
   .social-icon {
-      margin-right: 10px;
-      margin-left: 10px;
+      margin-right: 10px; 
+      /* margin-left: 10px; */
   }
 }
 
@@ -163,7 +202,7 @@ ul li {
   }
 
   .social-icon {
-    margin-right: 10px;
-    margin-left: 10px;
+    /* margin-right: 10px;
+    margin-left: 10px; */
 }
 }
