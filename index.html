@@ -14,13 +14,13 @@
   <script type="text/javascript"
     src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.min.js"></script>
   <bibtex src="data/citations.bib"></bibtex>
-  <!-- <div class="bibtex_structure">
-    <div class="group year" extra="ASC number">
-      <h4 class="title"></h4>
+  <div class="bibtex_structure">
+    <div class="sort date" extra="DESC date">
+      <!-- <h4 class="title"></h4> -->
       <div class="templates"></div>
     </div>
-  </div> -->
-  <div class="bibtex_template">
+  </div>
+  <div class="bibtex_template" style="margin-top:10px;">
     <div><i><span class="title" style="font-weight: bold; font-size: 15px"></span></i>
       <span class="if url" style="right: 20px">
         <a class="url" style="color:black; font-size:15px"><i class="fa fa-file-pdf-o" style="color:red"></i></a>
@@ -29,6 +29,12 @@
     <span class="author"></span>,
     <span class="if journal">
       <span class="journal"></span>,
+    </span>
+    <span class="if booktitle">
+      <i><span class="booktitle"></span></i>,
+    </span>
+    <span class="if publisher">
+      (<span class="publisher"></span>),
     </span>
     <span class="if year">
       <span class="month"></span> <span class="year"></span>
