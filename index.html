@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <title>Sol Zilberman</title>
   <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/styles/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/styles/favicon-16x16.png">
+  <link rel="icon" type="icon" href="/favicon.ico">
   <script defer src="https://us.umami.is/script.js" data-website-id="0387cffb-80f3-42cd-baa3-eb99dc661de2"></script>
   <link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,33 +17,6 @@
   <script type="text/javascript"
     src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.min.js"></script>
   <bibtex src="data/citations.bib"></bibtex>
-  <div class="bibtex_structure">
-    <div class="sort date" extra="DESC date">
-      <!-- <h4 class="title"></h4> -->
-      <div class="templates"></div>
-    </div>
-  </div>
-  <div class="bibtex_template" style="margin-top:10px;">
-    <div><i><span class="title" style="font-weight: bold; font-size: 15px"></span></i>
-      <span class="if url" style="right: 20px">
-        <a class="url" style="color:black; font-size:15px"><i class="fa fa-file-pdf-o" style="color:red"></i></a>
-      </span>
-    </div>
-    <span class="author"></span>,
-    <span class="if journal">
-      <span class="journal"></span>,
-    </span>
-    <span class="if booktitle">
-      <i><span class="booktitle"></span></i>,
-    </span>
-    <span class="if publisher">
-      (<span class="publisher"></span>),
-    </span>
-    <span class="if year">
-      <span class="month"></span> <span class="year"></span>
-    </span>
-  </div>
-
 </head>
 
 <body>
@@ -99,8 +75,14 @@
   </div>
 
   <div class="experience section">
+    
     <h2>> Publications</h2>
-    <div id="bibtex_display"></div>
+    <div id="bibtex_wrapper">
+      <div id="loading_bar">
+        Loading...
+      </div>
+      <div id="bibtex_display" callback="loadbar(bibtex_display)"></div>
+    </div>
   </div>
 
   <div id="teaching-section" class="section">
@@ -218,7 +200,48 @@
       </div>
     </div>
   </div>
+  
+  <!-- bibtex settings -->
+  <div style="display: none;height: 0px;width: 0px;">
+    <div class="bibtex_structure">
+      <div class="sort date" extra="DESC date">
+        <!-- <h4 class="title"></h4> -->
+        <div class="templates"></div>
+      </div>
+    </div>
+    <div class="bibtex_template" style="margin-top:10px;">
+      <div><i><span class="title" style="font-weight: bold; font-size: 15px"></span></i>
+        <span class="if url" style="right: 20px">
+          <a class="url" style="color:black; font-size:15px"><i class="fa fa-file-pdf-o" style="color:red"></i></a>
+        </span>
+      </div>
+      <span class="author"></span>,
+      <span class="if journal">
+        <span class="journal"></span>,
+      </span>
+      <span class="if booktitle">
+        <i><span class="booktitle"></span></i>,
+      </span>
+      <span class="if publisher">
+        (<span class="publisher"></span>),
+      </span>
+      <span class="if year">
+        <span class="month"></span> <span class="year"></span>
+      </span>
+    </div>
+  </div>
+  <!-- end of loading bibtex file -->
 
+  <script>
+    function loadbar(bdisplay){
+      console.log(bdisplay);
+      // select div with id bibtex_wrapper
+      var bibtex_wrapper = document.getElementById("bibtex_wrapper");
+      bibtex_wrapper.style="";
+      var loading_bar = document.getElementById("loading_bar");
+      loading_bar.style="display:none";
+    }
+  </script>
 </body>
 
 </html>
