@@ -1,6 +1,8 @@
 :root {
-  --text-color: #535353;
-  --faded-text: #4b5563;
+  /* --text-color: #535353;
+  --faded-text: #4b5563; */
+  --text-color: #111;
+  --faded-text: #111;
   font-family: 'Inter', sans-serif;
 }
 
@@ -10,21 +12,26 @@ html, body {
 }
 
 body {
-  background-color: rgb(226, 226, 226);
-  font-family: 'Inter', sans-serif;
-  color: #3f3f3f;
-  font-size: small;
+  background-color: #fffefa; 
+  /* background-color: rgb(226, 226, 226); */
+  /* font-family: 'Inter', sans-serif; */
+  font-family:system,-apple-system,san francisco,roboto,segoe ui,helvetica neue,helvetica,lucida grande,arial,sans-serif;
+  /* color: #3f3f3f; */
+  color: #111;
+  /* font-size: small; */
+  font-size: 16;
   margin: auto;
   max-width: 45rem;
+  line-height: 1.5;
 }
 
 h2{
-  font-size: x-large;
+  /* font-size: 24px; */
   font-weight: bold;
 }
 
 .my-name{
-  font-size: x-large;
+  /* font-size: x-large; */
   font-weight: bold;
 }
 
@@ -35,9 +42,10 @@ h2{
   justify-content: space-between;
   min-height: max-content;
   margin-top: 30px;
+  border-bottom: 2px solid black;
 }
 
-.header .header-name {
+.header .header-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,6 +57,7 @@ h2{
 .header h2{
   margin: 0px;
 }
+
 .header p{
   margin: 0px;
   color: var(--faded-text);
@@ -58,8 +67,8 @@ h2{
 .header img {
   width: 120px;
   border-radius: 10%;
-  margin-top: auto;
-  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: auto;
 }
 
 .section {
@@ -70,7 +79,7 @@ h2{
   font-weight: 650;
   text-align: justify;
   margin-bottom: 10px;
-  font-size: 20px;
+  /* font-size: 24px; */
 }
 
 .experience {
@@ -86,7 +95,7 @@ h2{
 
 .title-text {
   font-weight: 600;
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 
 .title-company {
@@ -157,12 +166,6 @@ h2{
       flex-direction: column;
   }
 
-  .social-icons-container {
-      /* flex-direction: row; */
-      /* justify-content: center; Center icons horizontally */
-      /* align-content: center; */
-  }
-
   .social-icon {
       margin-right: 10px; 
       /* margin-left: 10px; */
@@ -171,7 +174,7 @@ h2{
 
 @media (max-width: 480px) {
   body {
-      font-size: medium;
+      /* font-size: medium; */
       padding: 0 15px;
   }
 
@@ -185,8 +188,4 @@ h2{
       text-align: left; /* Keep text left-aligned */
   }
 
-  .social-icon {
-    /* margin-right: 10px;
-    margin-left: 10px; */
-}
 }
