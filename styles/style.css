@@ -1,8 +1,8 @@
 :root {
   /* --text-color: #535353;
   --faded-text: #4b5563; */
-  --text-color: #fffefa;
-  --faded-text: #fffefa;
+  --text-color: #3f3f3f;
+  --faded-text: #3f3f3f;
   font-family: 'Inter', sans-serif;
 }
 
@@ -12,8 +12,8 @@ html, body {
 }
 
 body {
-  background-color: #111;  
-  color: #fffefa;
+  background-color: #fffefa ;  
+  color: #3f3f3f;
   /* background-color: rgb(226, 226, 226); */
   /* font-family: 'Inter', sans-serif; */
   font-family:system,-apple-system,san francisco,roboto,segoe ui,helvetica neue,helvetica,lucida grande,arial,sans-serif;
@@ -139,6 +139,31 @@ h2{
 .pill:hover {
   background-color: #555;
 }
+
+nav {
+  /* position: inherit; */
+  /* margin: auto; */
+  /* max-width: 40rem; */
+  /* top: 100px; */
+  font-size: large;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  transform: scale(1.1); 
+}
+
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

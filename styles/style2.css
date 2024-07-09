@@ -1,0 +1,20 @@
+html {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  margin: 10px;
+  max-width: 50rem;
+}
+
+ul {
+  margin-top: 0px;
+}
+
+img {
+  width: 120px;
+  border-radius: 10%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
