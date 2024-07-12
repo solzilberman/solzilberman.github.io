@@ -10,19 +10,18 @@
     <link rel="icon" type="icon" href="/favicon.ico">
     <script defer src="https://us.umami.is/script.js" data-website-id="0387cffb-80f3-42cd-baa3-eb99dc661de2"></script>
     <link rel="stylesheet" href="styles/style.css">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.min.js"></script>
-    <bibtex src="data/citations.bib"></bibtex>
 </head>
 
 <body>
-    <h3>Sol Zilberman</h3>
-    <img src="data/profile-picture.jpg" width="120px" alt="My Photo">
-
+    <header>
+      <h3>👋 Sol Zilberman</h3>
+      <img src="data/profile-picture.jpg" width="120px" alt="My Photo">
+    </header>
+  
     <section id="about">
         <b>About</b>
         <ul>
-            <li> 👋 My name is Sol and I am currently a Computer Science PhD Student @ Michigan State University. </li>
+            <li> I am currently a Computer Science PhD Student @ Michigan State University. </li>
             <li>Links: 
                 <a href="https://github.com/solzilberman">GitHub</a>,
                 <a href="https://www.youtube.com/@solzilberman2529">YouTube</a>,
@@ -31,9 +30,8 @@
                 <a href="https://scholar.google.com/citations?hl=en&user=BdXRT1AAAAAJ">Google Scholar</a>
             </li>
         </ul>
-        <p>
-           
-        </p>
+    </section>
+      
         
     <section id="research">
         <b>Research</b>
@@ -55,16 +53,28 @@
     </section>
 
     <section id="publications">
-        <b>Publications</b>
-        <div id="bibtex_wrapper">
-            <div id="loading_bar">
-              Loading...
-            </div>
-            <ul>
-                <div id="bibtex_display" callback="loadbar(bibtex_display)"></div>
-            </ul>
-        </div>
+      <b>Publications</b>
+      <ul>
+          <li>
+              <strong><i>"No Free Lunch" when using Large Language Models to Verify Self-Generated Programs</i></strong>
+              <br>
+              Sol Zilberman, and Betty H.C. Cheng, <i>4th International Workshop on Artificial Intelligence in Software Testing, AIST 2024, Toronto, Canada, May 28, 2024</i>, (IEEE), May 2024
+          </li>
+          <li>
+              <strong><i>SafeDriveRL: Combining Non-cooperative Game Theory with Reinforcement Learning to Explore and Mitigate Uncertainty for Autonomous Vehicles</i></strong>
+              (<a href="https://doi.org/10.1145/3643915.3644089">link</a>)
+              <br>
+              Kenneth Chan, Sol Zilberman, Nick Polanco, Joshua E. Siegel, and Betty H.C. Cheng, <i>19th IEEE/ACM Symposium on Software Engineering for Adaptive and Self-Managing Systems, SEAMS 2024, Lisbon, Portugal, April 15-16, 2024</i>, (ACM), April 2024
+          </li>
+          <li>
+              <strong><i>Anunnaki: A Modular Framework for Developing Trusted Artificial Intelligence</i></strong>
+              (<a href="https://doi.org/10.1145/3649453">link</a>)
+              <br>
+              Michael Austin Langford, Sol Zilberman, and Betty H.C. Cheng, ACM Transactions on Autonomous and Adaptive Systems, (ACM), March 2024
+          </li>
+      </ul>
     </section>
+  
 
     <section id="teaching">
         <b>Teaching</b>
@@ -118,51 +128,17 @@
         </ul>
     </section>
 
-
-
-  <!-- bibtex settings -->
-  <div style="display: none;height: 0px;width: 0px;">
-    <div class="bibtex_structure">
-      <div class="sort date" extra="DESC date">
-        <!-- <h4 class="title"></h4> -->
-        <div class="templates"></div>
-      </div>
-    </div>
-    <div class="bibtex_template" style="margin-top:5px;">
-      <li>
-      <div><i><span class="title" style="font-weight: bold; font-size: 15px"></span></i>
-        <span class="if url" style="right: 20px">
-          <a class="url" style="color:black; font-size:15px"><i class="fa fa-file-pdf-o" style="color:red"></i></a>
-        </span>
-      </div>
-      <span class="author"></span>,
-      <span class="if journal">
-        <span class="journal"></span>,
-      </span>
-      <span class="if booktitle">
-        <i><span class="booktitle"></span></i>,
-      </span>
-      <span class="if publisher">
-        (<span class="publisher"></span>),
-      </span>
-      <span class="if year">
-        <span class="month"></span> <span class="year"></span>
-      </span>
-    </div>
-    </li>
-  </div>
-  <!-- end of loading bibtex file -->
-
-  <script>
-    function loadbar(bdisplay){
-      console.log(bdisplay);
-      // select div with id bibtex_wrapper
-      var bibtex_wrapper = document.getElementById("bibtex_wrapper");
-      bibtex_wrapper.style="";
-      var loading_bar = document.getElementById("loading_bar");
-      loading_bar.style="display:none";
-    }
-  </script>
+    <!-- <footer style="font-size:small;">
+    </footer>
+    <script>
+      var html_size = document.documentElement.innerHTML.length*(1/1024);
+      var imgpath=document.getElementsByTagName('img')[0];
+      var img_size = imgpath.width*imgpath.height*3*(1/1024);
+      total=html_size+img_size;
+      var footer = document.getElementsByTagName('footer')[0];
+      // This website is 44.48kB, 14kB without the image.
+      footer.innerHTML = "<hr/>This website is " + total.toFixed(2) + "kB, " + (html_size).toFixed(2) + "kB without the image."
+    </script> -->
 </body>
 
 </html>
