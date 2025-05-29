@@ -10,9 +10,17 @@
     <link rel="icon" type="icon" href="/favicon.ico">
     <script defer src="https://us.umami.is/script.js" data-website-id="0387cffb-80f3-42cd-baa3-eb99dc661de2"></script>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/toggle.css">
+    <script src="scripts/theme-toggle.js" defer></script>
 </head>
 
 <body>
+    <div id="theme-toggle-container">
+        <label class="theme-switch" title="Toggle light/dark mode">
+          <input type="checkbox" id="theme-toggle" />
+          <span class="slider"></span>
+        </label>
+    </div>
     <header>
       <h3>👋 Sol Zilberman</h3>
       <img src="data/profile-picture.jpg" width="120px" alt="My Photo">
@@ -128,18 +136,7 @@
             </li>
         </ul>
     </section>
-
-    <!-- <footer style="font-size:small;">
-    </footer>
-    <script>
-      var html_size = document.documentElement.innerHTML.length*(1/1024);
-      var imgpath=document.getElementsByTagName('img')[0];
-      var img_size = imgpath.width*imgpath.height*3*(1/1024);
-      total=html_size+img_size;
-      var footer = document.getElementsByTagName('footer')[0];
-      // This website is 44.48kB, 14kB without the image.
-      footer.innerHTML = "<hr/>This website is " + total.toFixed(2) + "kB, " + (html_size).toFixed(2) + "kB without the image."
-    </script> -->
+      
 </body>
 
 </html>

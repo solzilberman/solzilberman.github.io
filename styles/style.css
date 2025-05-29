@@ -68,18 +68,16 @@ img {
 header {
   margin-bottom: 2rem;
 }
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #1e1e1e;
-    color: #ddd;
-  }
-
-  a {
-    color: #66ccff;
-  }
-
-  section > b {
-    color: #eee;
-  }
+.dark body {
+  background: #1e1e1e;
+  color: #ddd;
 }
+
+.dark a {
+  color: #66ccff;
+}
+
+.dark section > b {
+  color: #eee;
+}
+
