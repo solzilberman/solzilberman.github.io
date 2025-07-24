@@ -2,7 +2,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; */
   /* background: #f9f9f9; */
   /* color: #111; */
   line-height: 1.6;
@@ -24,7 +24,7 @@ h3 {
 section > b {
   display: block;
   font-size: 1.25rem;
-  margin: 2rem 0 0.5rem 0;
+  margin: 1rem 0 0.5rem 0;
   font-weight: 600;
   color: #222;
 }
@@ -54,7 +54,7 @@ img {
   border-radius: 8px;
   display: block;
   margin-top: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 /* Publications formatting */
@@ -66,18 +66,84 @@ img {
 
 /* Optional spacing */
 header {
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
 }
-.dark body {
+body {
   background: #1e1e1e;
   color: #ddd;
 }
 
-.dark a {
+a {
   color: #66ccff;
 }
 
-.dark section > b {
+section > b {
   color: #eee;
 }
 
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between; /* allows items to spread if space is available */
+  gap: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+.banner img {
+  /* max-width: 100%; */
+  width:100px;
+  height: auto;
+  border-radius: 8px;
+  margin: 0px;
+}
+
+/* Optional: Improve layout on smaller screens */
+@media (max-width: 600px) {
+  .banner {
+    /* flex-direction: column; */
+    /* align-items: center; */
+    text-align: center;
+    gap: 10px;
+  }
+
+  .banner img {
+    max-width: 50%;
+    width: 50px;
+    height: auto;
+    margin: 0px;
+  }
+}
+
+
+
+/* ANIMATION STUFF */
+.marquee-underline {
+  position: relative;
+  display: flex;
+  /* font-family: 'Orbitron', sans-serif; */
+  color: white;
+  width: 100%;
+}
+
+.marquee-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #004400, #00ff00, #004400);
+  background-size: 200% 100%;
+  animation: scrollUnderline 2s linear infinite;
+}
+
+@keyframes scrollUnderline {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}

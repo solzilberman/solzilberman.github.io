@@ -10,27 +10,32 @@
     <link rel="icon" type="icon" href="/favicon.ico">
     <script defer src="https://us.umami.is/script.js" data-website-id="0387cffb-80f3-42cd-baa3-eb99dc661de2"></script>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/toggle.css">
-    <script src="scripts/theme-toggle.js" defer></script>
+    <!-- <link rel="stylesheet" href="styles/toggle.css">
+    <script src="scripts/theme-toggle.js" defer></script> -->
 </head>
 
 <body>
-    <div id="theme-toggle-container">
+    <!-- <div id="theme-toggle-container">
         <label class="theme-switch" title="Toggle light/dark mode">
           <input type="checkbox" id="theme-toggle" />
           <span class="slider"></span>
         </label>
-    </div>
+    </div> -->
     <header>
-      <h3>👋 Sol Zilberman</h3>
-      <img src="data/profile-picture.jpg" width="120px" alt="My Photo">
+        <div class="marquee-underline">
+            <div class="banner">
+                <img src="data/hello.gif">
+                <h3 style="margin: 0; text-align: center;">Sol Zilberman</h3>
+                <img src="data/profile-no-bg.png" alt="My Photo">
+            </div>
+        </div>
     </header>
-  
+
     <section id="about">
         <b>About</b>
         <ul>
             <li> I am currently a Computer Science PhD Student @ Michigan State University. </li>
-            <li>Links: 
+            <li>Links:
                 <a href="https://github.com/solzilberman">GitHub</a>,
                 <a href="https://www.youtube.com/@solzilberman2529">YouTube</a>,
                 <a href="https://www.linkedin.com/in/solzilberman/">LinkedIn</a>,
@@ -39,8 +44,8 @@
             </li>
         </ul>
     </section>
-      
-        
+
+
     <section id="research">
         <b>Research</b>
         <ul>
@@ -61,29 +66,35 @@
     </section>
 
     <section id="publications">
-      <b>Publications</b>
-      <ul>
-          <li>
-              <strong><i>"No Free Lunch" when using Large Language Models to Verify Self-Generated Programs</i></strong>
-              (<a href="https://ieeexplore.ieee.org/abstract/document/10675844">link</a>)
-              <br>
-              Sol Zilberman, and Betty H.C. Cheng, <i>4th International Workshop on Artificial Intelligence in Software Testing, AIST 2024, Toronto, Canada, May 28, 2024</i>, (IEEE), May 2024
-          </li>
-          <li>
-              <strong><i>SafeDriveRL: Combining Non-cooperative Game Theory with Reinforcement Learning to Explore and Mitigate Uncertainty for Autonomous Vehicles</i></strong>
-              (<a href="https://doi.org/10.1145/3643915.3644089">link</a>)
-              <br>
-              Kenneth Chan, Sol Zilberman, Nick Polanco, Joshua E. Siegel, and Betty H.C. Cheng, <i>19th IEEE/ACM Symposium on Software Engineering for Adaptive and Self-Managing Systems, SEAMS 2024, Lisbon, Portugal, April 15-16, 2024</i>, (ACM), April 2024
-          </li>
-          <li>
-              <strong><i>Anunnaki: A Modular Framework for Developing Trusted Artificial Intelligence</i></strong>
-              (<a href="https://doi.org/10.1145/3649453">link</a>)
-              <br>
-              Michael Austin Langford, Sol Zilberman, and Betty H.C. Cheng, ACM Transactions on Autonomous and Adaptive Systems, (ACM), March 2024
-          </li>
-      </ul>
+        <b>Publications</b>
+        <ul>
+            <li>
+                <strong><i>"No Free Lunch" when using Large Language Models to Verify Self-Generated
+                        Programs</i></strong>
+                (<a href="https://ieeexplore.ieee.org/abstract/document/10675844">link</a>)
+                <br>
+                Sol Zilberman, and Betty H.C. Cheng, <i>4th International Workshop on Artificial Intelligence in
+                    Software Testing, AIST 2024, Toronto, Canada, May 28, 2024</i>, (IEEE), May 2024
+            </li>
+            <li>
+                <strong><i>SafeDriveRL: Combining Non-cooperative Game Theory with Reinforcement Learning to Explore and
+                        Mitigate Uncertainty for Autonomous Vehicles</i></strong>
+                (<a href="https://doi.org/10.1145/3643915.3644089">link</a>)
+                <br>
+                Kenneth Chan, Sol Zilberman, Nick Polanco, Joshua E. Siegel, and Betty H.C. Cheng, <i>19th IEEE/ACM
+                    Symposium on Software Engineering for Adaptive and Self-Managing Systems, SEAMS 2024, Lisbon,
+                    Portugal, April 15-16, 2024</i>, (ACM), April 2024
+            </li>
+            <li>
+                <strong><i>Anunnaki: A Modular Framework for Developing Trusted Artificial Intelligence</i></strong>
+                (<a href="https://doi.org/10.1145/3649453">link</a>)
+                <br>
+                Michael Austin Langford, Sol Zilberman, and Betty H.C. Cheng, ACM Transactions on Autonomous and
+                Adaptive Systems, (ACM), March 2024
+            </li>
+        </ul>
     </section>
-  
+
 
     <section id="teaching">
         <b>Teaching</b>
@@ -103,13 +114,14 @@
                 Awards: Distinguished Engineer Fellowship Recipient
             </li>
             <li>
-                <strong>Bachelor of Science (B.S.) Mathematics & Computer Science, Minor in Philosophy</strong> 2018 - 2022<br>
+                <strong>Bachelor of Science (B.S.) Mathematics & Computer Science, Minor in Philosophy</strong> 2018 -
+                2022<br>
                 Purdue University<br>
                 Awards: Freshman Honors Society, National Honors Society
             </li>
         </ul>
     </section>
-    
+
 
     <section id="experience">
         <b>Experience</b>
@@ -117,26 +129,31 @@
             <li>
                 <strong>Research Assistant</strong> (August 2022 - May 2023)<br>
                 Michigan State University<br>
-                Researched state of the art techniques for the development and deployment of trustworthy learning-enabled autonomous systems, with focus on adaptive unmanned aerial vehicles employing object detection models.
+                Researched state of the art techniques for the development and deployment of trustworthy
+                learning-enabled autonomous systems, with focus on adaptive unmanned aerial vehicles employing object
+                detection models.
             </li>
             <li>
                 <strong>Automation Engineer Intern</strong> (Summer 2022)<br>
                 Ironclad<br>
-                Expanded automation framework and increased regression detection for over 500,000 yearly user events via custom mobile testing suite.
+                Expanded automation framework and increased regression detection for over 500,000 yearly user events via
+                custom mobile testing suite.
             </li>
             <li>
                 <strong>Security Engineer Intern</strong> (Summer 2021)<br>
                 Accenture<br>
-                Improved internal security infrastructure through development of data-driven Python applications, increasing security incident detection rate and minimizing response time.
+                Improved internal security infrastructure through development of data-driven Python applications,
+                increasing security incident detection rate and minimizing response time.
             </li>
             <li>
                 <strong>Software Engineer Intern</strong> (Summer 2020)<br>
                 Perflo<br>
-                Developed and implemented a data analytics dashboard using GraphQL API, Postgresql, and a custom React library for a B2B project-management application.
+                Developed and implemented a data analytics dashboard using GraphQL API, Postgresql, and a custom React
+                library for a B2B project-management application.
             </li>
         </ul>
     </section>
-      
+
 </body>
 
 </html>
