@@ -1,0 +1,89 @@
+#cube-section {
+    text-align: center;
+    margin: 50px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cube-container {
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    display: inline-block;
+    margin: 25px 0;
+}
+
+.cube {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 8s linear infinite;
+}
+
+.face {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: white url('/data/hypercube.png') center center;
+    background-size: cover;
+    border: 2px solid #c2c2c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    box-shadow: inset 0 0 20px rgba(255,255,255,0.1);
+}
+
+.front  { transform: rotateY(0deg) translateZ(25px); }
+.back   { transform: rotateY(180deg) translateZ(25px); }
+.right  { transform: rotateY(90deg) translateZ(25px); }
+.left   { transform: rotateY(-90deg) translateZ(25px); }
+.top    { transform: rotateX(90deg) translateZ(25px); }
+.bottom { transform: rotateX(-90deg) translateZ(25px); }
+
+@keyframes spin {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    25% {
+        transform: rotateX(90deg) rotateY(45deg) rotateZ(45deg);
+    }
+    50% {
+        transform: rotateX(180deg) rotateY(90deg) rotateZ(90deg);
+    }
+    75% {
+        transform: rotateX(270deg) rotateY(135deg) rotateZ(135deg);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
+/* Hover effect to pause animation */
+.cube-container:hover .cube {
+    animation-play-state: paused;
+}
+
+/* Responsive design */
+/* @media (max-width: 768px) {
+    .cube {
+        width: 25px;
+        height: 25px;
+    }
+    .face {
+        width: 25px;
+        height: 25px;
+        font-size: 8px;
+    }
+    .front  { transform: rotateY(0deg) translateZ(12.5px); }
+    .back   { transform: rotateY(180deg) translateZ(12.5px); }
+    .right  { transform: rotateY(90deg) translateZ(12.5px); }
+    .left   { transform: rotateY(-90deg) translateZ(12.5px); }
+    .top    { transform: rotateX(90deg) translateZ(12.5px); }
+    .bottom { transform: rotateX(-90deg) translateZ(12.5px); }
+}  */
