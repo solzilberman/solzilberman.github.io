@@ -1,178 +1,224 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Sol Zilberman</title>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="32x32" href="/styles/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/styles/favicon-16x16.png">
     <link rel="icon" type="icon" href="/favicon.ico">
     <script defer src="https://us.umami.is/script.js" data-website-id="0387cffb-80f3-42cd-baa3-eb99dc661de2"></script>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/cube.css">
-    <!-- <link rel="stylesheet" href="styles/toggle.css">
-    <script src="scripts/theme-toggle.js" defer></script> -->
+    <link rel="stylesheet" href="styles/modern-latex.css">
 </head>
 
 <body>
-    <!-- <div id="theme-toggle-container">
-        <label class="theme-switch" title="Toggle light/dark mode">
-          <input type="checkbox" id="theme-toggle" />
-          <span class="slider"></span>
-        </label>
-    </div> -->
-    <header>
-        <div class="marquee-underline">
-            <div class="banner">
-                <img src="data/hello.gif">
-                <h3 style="margin: 0; text-align: center;">Sol Zilberman</h3>
-                <img src="data/profile-no-bg.png" alt="My Photo">
-                <!-- <section id="cube-section"> -->
-                    
-                <!-- </section> -->
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#top" class="nav-logo">SZ</a>
+            <div class="nav-links">
+                <a href="#top" class="nav-link active">About</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="#teaching" class="nav-link">Teaching</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <!-- <a href="#cube-section" class="nav-link">Fun</a> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="top">
+        <div class="header-content">
+            <img src="data/profile-no-bg.png" alt="Sol Zilberman" class="profile-image">
+            <div class="header-info">
+                <h1 class="name">Sol Zilberman</h1>
+                <p class="title">PhD Student in Computer Science</p>
+                <p class="affiliation">Michigan State University</p>
+                <div class="links-section">
+                    <a href="https://github.com/solzilberman" class="link-button">GitHub</a>
+                    <a href="https://www.youtube.com/@solzilberman2529" class="link-button">YouTube</a>
+                    <a href="https://www.linkedin.com/in/solzilberman/" class="link-button">LinkedIn</a>
+                    <a href="mailto:sol.zilberman@gmail.com" class="link-button">Email</a>
+                    <a href="https://scholar.google.com/citations?hl=en&user=BdXRT1AAAAAJ" class="link-button">Google Scholar</a>
+                </div>
             </div>
         </div>
     </header>
 
-    <section id="about">
-        <b>About</b>
-        <ul>
-            <li> I am currently a Computer Science PhD Student @ Michigan State University. </li>
-            <li>Links:
-                <a href="https://github.com/solzilberman">GitHub</a>,
-                <a href="https://www.youtube.com/@solzilberman2529">YouTube</a>,
-                <a href="https://www.linkedin.com/in/solzilberman/">LinkedIn</a>,
-                <a href="mailto:sol.zilberman@gmail.com">Email</a>,
-                <a href="https://scholar.google.com/citations?hl=en&user=BdXRT1AAAAAJ">Google Scholar</a>
-            </li>
-        </ul>
-    </section>
+    <!-- Main Content -->
+    <main class="container">
 
+        <!-- Research Section -->
+        <section id="research" class="section">
+            <h2>Research</h2>
+            <div class="content">
+                <p>My research focuses on assurance for learning-enabled safety-critical systems (e.g., autonomous vehicles).</p>
+                <p class="subsection-title">Research Topics:</p>
+                <ul class="research-topics">
+                    <li>Evolutionary Computation</li>
+                    <li>Trustworthy Autonomous Vehicles</li>
+                    <li>Deep Learning</li>
+                    <li>Reinforcement Learning</li>
+                    <li>High Assurance Computing</li>
+                    <li>Game Theory</li>
+                    <li>Computer Graphics</li>
+                    <li>Adaptive Systems</li>
+                </ul>
+            </div>
+        </section>
 
-    <section id="research">
-        <b>Research</b>
-        <ul>
-            <li> My research focuses on assurance for learning-enabled safety-critical systems
-                (e.g., autonomous vehicles). </li>
-            <li>Below is a collection of broad topics my work has touched upon thus far:</li>
-            <ul>
-                <li>Evolutionary Computation</li>
-                <li>Trustworthy Autonomous Vehicles</li>
-                <li>Deep Learning</li>
-                <li>Reinforcement Learning</li>
-                <li>High Assurance Computing</li>
-                <li>Game Theory</li>
-                <li>Computer Graphics</li>
-                <li>Adaptive Systems</li>
-            </ul>
-        </ul>
-    </section>
+        <!-- Publications Section -->
+        <section id="publications" class="section">
+            <h2>Publications</h2>
+            <div class="content">
+                <article class="publication">
+                    <h3 class="pub-title">"No Free Lunch" when using Large Language Models to Verify Self-Generated Programs</h3>
+                    <p class="pub-authors">Sol Zilberman, and Betty H.C. Cheng</p>
+                    <p class="pub-venue">4th International Workshop on Artificial Intelligence in Software Testing, AIST 2024, Toronto, Canada, May 28, 2024, (IEEE), May 2024</p>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/10675844" class="pub-link">[Paper]</a>
+                </article>
 
-    <section id="publications">
-        <b>Publications</b>
-        <ul>
-            <li>
-                <strong><i>"No Free Lunch" when using Large Language Models to Verify Self-Generated
-                        Programs</i></strong>
-                (<a href="https://ieeexplore.ieee.org/abstract/document/10675844">link</a>)
-                <br>
-                Sol Zilberman, and Betty H.C. Cheng, <i>4th International Workshop on Artificial Intelligence in
-                    Software Testing, AIST 2024, Toronto, Canada, May 28, 2024</i>, (IEEE), May 2024
-            </li>
-            <li>
-                <strong><i>SafeDriveRL: Combining Non-cooperative Game Theory with Reinforcement Learning to Explore and
-                        Mitigate Uncertainty for Autonomous Vehicles</i></strong>
-                (<a href="https://doi.org/10.1145/3643915.3644089">link</a>)
-                <br>
-                Kenneth Chan, Sol Zilberman, Nick Polanco, Joshua E. Siegel, and Betty H.C. Cheng, <i>19th IEEE/ACM
-                    Symposium on Software Engineering for Adaptive and Self-Managing Systems, SEAMS 2024, Lisbon,
-                    Portugal, April 15-16, 2024</i>, (ACM), April 2024
-            </li>
-            <li>
-                <strong><i>Anunnaki: A Modular Framework for Developing Trusted Artificial Intelligence</i></strong>
-                (<a href="https://doi.org/10.1145/3649453">link</a>)
-                <br>
-                Michael Austin Langford, Sol Zilberman, and Betty H.C. Cheng, ACM Transactions on Autonomous and
-                Adaptive Systems, (ACM), March 2024
-            </li>
-        </ul>
-    </section>
+                <article class="publication">
+                    <h3 class="pub-title">SafeDriveRL: Combining Non-cooperative Game Theory with Reinforcement Learning to Explore and Mitigate Uncertainty for Autonomous Vehicles</h3>
+                    <p class="pub-authors">Kenneth Chan, Sol Zilberman, Nick Polanco, Joshua E. Siegel, and Betty H.C. Cheng</p>
+                    <p class="pub-venue">19th IEEE/ACM Symposium on Software Engineering for Adaptive and Self-Managing Systems, SEAMS 2024, Lisbon, Portugal, April 15-16, 2024, (ACM), April 2024</p>
+                    <a href="https://doi.org/10.1145/3643915.3644089" class="pub-link">[Paper]</a>
+                </article>
 
+                <article class="publication">
+                    <h3 class="pub-title">Anunnaki: A Modular Framework for Developing Trusted Artificial Intelligence</h3>
+                    <p class="pub-authors">Michael Austin Langford, Sol Zilberman, and Betty H.C. Cheng</p>
+                    <p class="pub-venue">ACM Transactions on Autonomous and Adaptive Systems, (ACM), March 2024</p>
+                    <a href="https://doi.org/10.1145/3649453" class="pub-link">[Paper]</a>
+                </article>
+            </div>
+        </section>
 
-    <section id="teaching">
-        <b>Teaching</b>
-        <ul>
-            <li>CSE 231 - Introduction to Programming (Fall 2023, Summer 2024)</li>
-            <li>CSE 325 - Computer Systems (Spring 2024) </li>
-        </ul>
-    </section>
+        <!-- Teaching Section -->
+        <section id="teaching" class="section">
+            <h2>Teaching</h2>
+            <div class="content">
+                <div class="teaching-item">
+                    <strong>CSE 435</strong> - Software Engineering
+                    <span class="teaching-term">(Fall 2024, Fall 2025)</span>
+                </div>
+                <div class="teaching-item">
+                    <strong>CSE 325</strong> - Computer Systems
+                    <span class="teaching-term">(Spring 2024, Spring 2025)</span>
+                </div>
+                <div class="teaching-item">
+                    <strong>CSE 231</strong> - Introduction to Programming
+                    <span class="teaching-term">(Fall 2023, Summer 2024)</span>
+                </div>
+            </div>
+        </section>
 
-    <section id="education">
-        <b>Education</b>
-        <ul>
-            <li>
-                <strong>Doctor of Philosophy, Computer Science</strong> (Exp. 2026)<br>
-                Michigan State University<br>
-                Advisor: Dr. Betty H.C. Cheng<br>
-                Awards: Distinguished Engineer Fellowship Recipient
-            </li>
-            <li>
-                <strong>Bachelor of Science (B.S.) Mathematics & Computer Science, Minor in Philosophy</strong> 2018 -
-                2022<br>
-                Purdue University<br>
-                Awards: Freshman Honors Society, National Honors Society
-            </li>
-        </ul>
-    </section>
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <div class="content">
+                <div class="edu-item">
+                    <img src="data/logos/msu.png" alt="MSU Logo" class="edu-logo">
+                    <div class="edu-content">
+                        <h3 class="edu-degree">Doctor of Philosophy, Computer Science</h3>
+                        <p class="edu-year">(Expected 2026)</p>
+                        <p class="edu-school">Michigan State University</p>
+                        <p class="edu-detail">Advisor: Dr. Betty H.C. Cheng</p>
+                        <p class="edu-detail">Awards: Distinguished Engineer Fellowship Recipient</p>
+                    </div>
+                </div>
+                <div class="edu-item">
+                    <img src="data/logos/purdue.png" alt="Purdue Logo" class="edu-logo">
+                    <div class="edu-content">
+                        <h3 class="edu-degree">Bachelor of Science, Mathematics & Computer Science</h3>
+                        <p class="edu-minor">Minor in Philosophy</p>
+                        <p class="edu-year">2018 - 2022</p>
+                        <p class="edu-school">Purdue University</p>
+                        <p class="edu-detail">Awards: Freshman Honors Society, National Honors Society</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <div class="content">
+                <div class="exp-item">
+                    <img src="data/logos/meta.png" alt="Meta Logo" class="exp-logo">
+                    <div class="exp-content">
+                        <h3 class="exp-title">Machine Learning Engineer Intern</h3>
+                        <p class="exp-date">(Summer 2025)</p>
+                        <p class="exp-org">Meta</p>
+                        <p class="exp-desc">Facebook trust and safety team.</p>
+                    </div>
+                </div>
+                <div class="exp-item">
+                    <img src="data/logos/msu.png" alt="Perflo Logo" class="exp-logo">
+                    <div class="exp-content">
+                        <h3 class="exp-title">Research Assistant</h3>
+                        <p class="exp-date">(August 2022 - May 2023)</p>
+                        <p class="exp-org">Michigan State University</p>
+                        <p class="exp-desc">Researched state of the art techniques for the development and deployment of trustworthy learning-enabled autonomous systems, with focus on adaptive unmanned aerial vehicles employing object detection models.</p>
+                    </div>
+                </div>
+                <div class="exp-item">
+                    <img src="data/logos/ironclad.png" alt="Ironclad Logo" class="exp-logo">
+                    <div class="exp-content">
+                        <h3 class="exp-title">Automation Engineer Intern</h3>
+                        <p class="exp-date">(Summer 2022)</p>
+                        <p class="exp-org">Ironclad</p>
+                        <p class="exp-desc">Expanded automation framework and increased regression detection for over 500,000 yearly user events via custom mobile testing suite.</p>
+                    </div>
+                </div>
+                <div class="exp-item">
+                    <img src="data/logos/accenture.png" alt="Accenture Logo" class="exp-logo">
+                    <div class="exp-content">
+                        <h3 class="exp-title">Security Engineer Intern</h3>
+                        <p class="exp-date">(Summer 2021)</p>
+                        <p class="exp-org">Accenture</p>
+                        <p class="exp-desc">Improved internal security infrastructure through development of data-driven Python applications, increasing security incident detection rate and minimizing response time.</p>
+                    </div>
+                </div>
+                <div class="exp-item">
+                    <img src="data/logos/perflo.png" alt="Perflo Logo" class="exp-logo">
+                    <div class="exp-content">
+                        <h3 class="exp-title">Software Engineer Intern</h3>
+                        <p class="exp-date">(Summer 2020)</p>
+                        <p class="exp-org">Perflo</p>
+                        <p class="exp-desc">Developed and implemented a data analytics dashboard using GraphQL API, Postgresql, and a custom React library for a B2B project-management application.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="experience">
-        <b>Experience</b>
-        <ul>
-            <li>
-                <strong>Research Assistant</strong> (August 2022 - May 2023)<br>
-                Michigan State University<br>
-                Researched state of the art techniques for the development and deployment of trustworthy
-                learning-enabled autonomous systems, with focus on adaptive unmanned aerial vehicles employing object
-                detection models.
-            </li>
-            <li>
-                <strong>Automation Engineer Intern</strong> (Summer 2022)<br>
-                Ironclad<br>
-                Expanded automation framework and increased regression detection for over 500,000 yearly user events via
-                custom mobile testing suite.
-            </li>
-            <li>
-                <strong>Security Engineer Intern</strong> (Summer 2021)<br>
-                Accenture<br>
-                Improved internal security infrastructure through development of data-driven Python applications,
-                increasing security incident detection rate and minimizing response time.
-            </li>
-            <li>
-                <strong>Software Engineer Intern</strong> (Summer 2020)<br>
-                Perflo<br>
-                Developed and implemented a data analytics dashboard using GraphQL API, Postgresql, and a custom React
-                library for a B2B project-management application.
-            </li>
-        </ul>
-    </section>
+        <!-- Fun Cube Section
+        <section id="cube-section" class="section">
+            <h2>Interactive Cube</h2>
+            <div class="content">
+                <div class="cube-container">
+                    <div class="cube">
+                        <div class="face front"></div>
+                        <div class="face back"></div>
+                        <div class="face right"></div>
+                        <div class="face left"></div>
+                        <div class="face top"></div>
+                        <div class="face bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
 
-    <section id="cube-section">
-        <b>fun cube</b>
-    <div class="cube-container">
-        <div class="cube">
-            <div class="face front"></div>
-            <div class="face back"></div>
-            <div class="face right"></div>
-            <div class="face left"></div>
-            <div class="face top"></div>
-            <div class="face bottom"></div>
-        </div>
-    </div>
-    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sol Zilberman. All rights reserved.</p>
+    </footer>
 
-
+    <script src="scripts/navigation.js"></script>
 </body>
 
 </html>
