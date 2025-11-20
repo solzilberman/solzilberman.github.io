@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/styles/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/styles/favicon-16x16.png">
     <link rel="icon" type="icon" href="/favicon.ico">
-    <!-- <script defer src="https://us.umami.is/script.js" data-website-id="0387cffb-80f3-42cd-baa3-eb99dc661de2"></script> -->
+    <script defer src="https://us.umami.is/script.js" data-website-id="0387cffb-80f3-42cd-baa3-eb99dc661de2"></script>
     <link rel="stylesheet" href="styles/modern-latex.css">
 </head>
 
@@ -18,10 +18,10 @@
         <div class="nav-container">
             <a href="/index.html" class="nav-logo">SZ</a>
             <div class="nav-links">
-                <a href="/index.html" class="nav-link active">About</a>
+                <a href="/index.html" class="nav-link">About</a>
                 <a href="/publications.html" class="nav-link">Publications</a>
                 <a href="/teaching.html" class="nav-link">Teaching</a>
-                <a href="/education.html" class="nav-link">Education</a>
+                <a href="/education.html" class="nav-link active">Education</a>
                 <a href="/experience.html" class="nav-link">Experience</a>
             </div>
         </div>
@@ -48,23 +48,34 @@
 
     <!-- Main Content -->
     <main class="container">
-        <section id="research" class="section">
-            <h2>Research</h2>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2>Education</h2>
             <div class="content">
-                <p>My research focuses on assurance for learning-enabled safety-critical systems (e.g., autonomous vehicles).</p>
-                <p class="subsection-title">Research Topics:</p>
-                <ul class="research-topics">
-                    <li>Evolutionary Computation</li>
-                    <li>Trustworthy Autonomous Vehicles</li>
-                    <li>Deep Learning</li>
-                    <li>Reinforcement Learning</li>
-                    <li>High Assurance Computing</li>
-                    <li>Game Theory</li>
-                    <li>Computer Graphics</li>
-                    <li>Adaptive Systems</li>
-                </ul>
+                <div class="edu-item">
+                    <img src="data/logos/msu.png" alt="MSU Logo" class="edu-logo">
+                    <div class="edu-content">
+                        <h3 class="edu-degree">Doctor of Philosophy, Computer Science</h3>
+                        <p class="edu-year">(Expected 2026)</p>
+                        <p class="edu-school">Michigan State University</p>
+                        <p class="edu-detail">Advisor: Dr. Betty H.C. Cheng</p>
+                        <p class="edu-detail">Awards: Distinguished Engineer Fellowship Recipient</p>
+                    </div>
+                </div>
+                <div class="edu-item">
+                    <img src="data/logos/purdue.png" alt="Purdue Logo" class="edu-logo">
+                    <div class="edu-content">
+                        <h3 class="edu-degree">Bachelor of Science, Mathematics & Computer Science</h3>
+                        <p class="edu-minor">Minor in Philosophy</p>
+                        <p class="edu-year">2018 - 2022</p>
+                        <p class="edu-school">Purdue University</p>
+                        <p class="edu-detail">Awards: Freshman Honors Society, National Honors Society</p>
+                    </div>
+                </div>
             </div>
         </section>
+
     </main>
 
     <!-- Footer -->
@@ -76,3 +87,4 @@
 </body>
 
 </html>
+

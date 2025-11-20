@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/styles/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/styles/favicon-16x16.png">
     <link rel="icon" type="icon" href="/favicon.ico">
-    <!-- <script defer src="https://us.umami.is/script.js" data-website-id="0387cffb-80f3-42cd-baa3-eb99dc661de2"></script> -->
+    <script defer src="https://us.umami.is/script.js" data-website-id="0387cffb-80f3-42cd-baa3-eb99dc661de2"></script>
     <link rel="stylesheet" href="styles/modern-latex.css">
 </head>
 
@@ -18,8 +18,8 @@
         <div class="nav-container">
             <a href="/index.html" class="nav-logo">SZ</a>
             <div class="nav-links">
-                <a href="/index.html" class="nav-link active">About</a>
-                <a href="/publications.html" class="nav-link">Publications</a>
+                <a href="/index.html" class="nav-link">About</a>
+                <a href="/publications.html" class="nav-link active">Publications</a>
                 <a href="/teaching.html" class="nav-link">Teaching</a>
                 <a href="/education.html" class="nav-link">Education</a>
                 <a href="/experience.html" class="nav-link">Experience</a>
@@ -48,23 +48,34 @@
 
     <!-- Main Content -->
     <main class="container">
-        <section id="research" class="section">
-            <h2>Research</h2>
+
+        <!-- Publications Section -->
+        <section id="publications" class="section">
+            <h2>Publications</h2>
             <div class="content">
-                <p>My research focuses on assurance for learning-enabled safety-critical systems (e.g., autonomous vehicles).</p>
-                <p class="subsection-title">Research Topics:</p>
-                <ul class="research-topics">
-                    <li>Evolutionary Computation</li>
-                    <li>Trustworthy Autonomous Vehicles</li>
-                    <li>Deep Learning</li>
-                    <li>Reinforcement Learning</li>
-                    <li>High Assurance Computing</li>
-                    <li>Game Theory</li>
-                    <li>Computer Graphics</li>
-                    <li>Adaptive Systems</li>
-                </ul>
+                <article class="publication">
+                    <h3 class="pub-title">"No Free Lunch" when using Large Language Models to Verify Self-Generated Programs</h3>
+                    <p class="pub-authors">Sol Zilberman, and Betty H.C. Cheng</p>
+                    <p class="pub-venue">4th International Workshop on Artificial Intelligence in Software Testing, AIST 2024, Toronto, Canada, May 28, 2024, (IEEE), May 2024</p>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/10675844" class="pub-link">[Paper]</a>
+                </article>
+
+                <article class="publication">
+                    <h3 class="pub-title">SafeDriveRL: Combining Non-cooperative Game Theory with Reinforcement Learning to Explore and Mitigate Uncertainty for Autonomous Vehicles</h3>
+                    <p class="pub-authors">Kenneth Chan, Sol Zilberman, Nick Polanco, Joshua E. Siegel, and Betty H.C. Cheng</p>
+                    <p class="pub-venue">19th IEEE/ACM Symposium on Software Engineering for Adaptive and Self-Managing Systems, SEAMS 2024, Lisbon, Portugal, April 15-16, 2024, (ACM), April 2024</p>
+                    <a href="https://doi.org/10.1145/3643915.3644089" class="pub-link">[Paper]</a>
+                </article>
+
+                <article class="publication">
+                    <h3 class="pub-title">Anunnaki: A Modular Framework for Developing Trusted Artificial Intelligence</h3>
+                    <p class="pub-authors">Michael Austin Langford, Sol Zilberman, and Betty H.C. Cheng</p>
+                    <p class="pub-venue">ACM Transactions on Autonomous and Adaptive Systems, (ACM), March 2024</p>
+                    <a href="https://doi.org/10.1145/3649453" class="pub-link">[Paper]</a>
+                </article>
             </div>
         </section>
+
     </main>
 
     <!-- Footer -->
@@ -76,3 +87,4 @@
 </body>
 
 </html>
+

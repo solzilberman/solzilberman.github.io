@@ -1,25 +1,18 @@
-// Minimal navigation script
+// Navigation script for multi-page site
 
 document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-link');
-    const sections = document.querySelectorAll('.section');
+    const currentPath = window.location.pathname;
     
-    // Highlight active section
-    window.addEventListener('scroll', () => {
-        let current = 'top';
+    // Highlight active page based on current URL
+    navLinks.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+        link.classList.remove('active');
         
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 80;
-            if (scrollY >= sectionTop) {
-                current = section.getAttribute('id');
-            }
-        });
-        
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href').slice(1) === current) {
-                link.classList.add('active');
-            }
-        });
+        // Match current page
+        if (linkPath === currentPath || 
+            (currentPath === '/' && linkPath === '/index.html')) {
+            link.classList.add('active');
+        }
     });
 });

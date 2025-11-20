@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/styles/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/styles/favicon-16x16.png">
     <link rel="icon" type="icon" href="/favicon.ico">
-    <!-- <script defer src="https://us.umami.is/script.js" data-website-id="0387cffb-80f3-42cd-baa3-eb99dc661de2"></script> -->
+    <script defer src="https://us.umami.is/script.js" data-website-id="0387cffb-80f3-42cd-baa3-eb99dc661de2"></script>
     <link rel="stylesheet" href="styles/modern-latex.css">
 </head>
 
@@ -18,9 +18,9 @@
         <div class="nav-container">
             <a href="/index.html" class="nav-logo">SZ</a>
             <div class="nav-links">
-                <a href="/index.html" class="nav-link active">About</a>
+                <a href="/index.html" class="nav-link">About</a>
                 <a href="/publications.html" class="nav-link">Publications</a>
-                <a href="/teaching.html" class="nav-link">Teaching</a>
+                <a href="/teaching.html" class="nav-link active">Teaching</a>
                 <a href="/education.html" class="nav-link">Education</a>
                 <a href="/experience.html" class="nav-link">Experience</a>
             </div>
@@ -48,23 +48,29 @@
 
     <!-- Main Content -->
     <main class="container">
-        <section id="research" class="section">
-            <h2>Research</h2>
+
+        <!-- Teaching Section -->
+        <section id="teaching" class="section">
+            <h2>Teaching</h2>
             <div class="content">
-                <p>My research focuses on assurance for learning-enabled safety-critical systems (e.g., autonomous vehicles).</p>
-                <p class="subsection-title">Research Topics:</p>
-                <ul class="research-topics">
-                    <li>Evolutionary Computation</li>
-                    <li>Trustworthy Autonomous Vehicles</li>
-                    <li>Deep Learning</li>
-                    <li>Reinforcement Learning</li>
-                    <li>High Assurance Computing</li>
-                    <li>Game Theory</li>
-                    <li>Computer Graphics</li>
-                    <li>Adaptive Systems</li>
-                </ul>
+                <div class="teaching-item">
+                    <strong>CSE 435 - Software Engineering</strong> 
+                    <span class="teaching-term">(Fall 2024, Fall 2025)</span>
+                    <p class="teaching-desc">Software lifecycle including specification, design, coding, testing, and verification of a software product. Stepwise refinement and traceability. Software maintenance and documentation.</p>
+                </div>
+                <div class="teaching-item">
+                    <strong>CSE 325 - Computer Systems</strong> 
+                    <span class="teaching-term">(Spring 2024, Spring 2025)</span>
+                    <p class="teaching-desc">Process and processor management. Concurrent processes and threads. Memory management and the memory hierarchy. Networking and network protocols. Secure programming and communication methods.</p>
+                </div>
+                <div class="teaching-item">
+                    <strong>CSE 231 - Introduction to Programming</strong> 
+                    <span class="teaching-term">(Fall 2023, Summer 2024)</span>
+                    <p class="teaching-desc">Introduction to programming using Python. Design, implementation and testing of programs to solve problems such as those in engineering, mathematics and science. Programming fundamentals, functions, objects, and use of libraries of functions.</p>
+                </div>
             </div>
         </section>
+
     </main>
 
     <!-- Footer -->
@@ -76,3 +82,4 @@
 </body>
 
 </html>
+
