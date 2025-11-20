@@ -1,5 +1,5 @@
 /* Minimal LaTeX-inspired Theme */
-
+  
 /* Dark Mode (Active) */
 :root {
     --bg: #1e1e1e;
@@ -16,20 +16,6 @@
     --shadow: rgba(0, 0, 0, 0.5);
 }
 
-/* Light Mode (Uncomment to activate) */
-/* :root {
-    --bg: #ebebeb;
-    --bg-alt: #f0f0f0;
-    --text: #1a1a1a;
-    --text-dim: #3b3b3b;
-    --accent: #444;
-    --border: #d0d0d0;
-    --nav-bg: rgba(255, 255, 255, 0.98);
-    --nav-border: #888;
-    --shadow: rgba(0, 0, 0, 0.15);
-} */
-
-
 * {
     margin: 0;
     padding: 0;
@@ -41,7 +27,7 @@ html {
 }
 
 body {
-    font-family: 'Computer Modern Serif', 'Palatino', 'Georgia', serif;
+    font-family: 'Computer Modern';
     background: var(--bg);
     color: var(--text);
     line-height: 1.5;
