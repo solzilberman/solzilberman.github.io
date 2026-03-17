@@ -65,6 +65,7 @@ nav {
 
 .nav-links {
     display: flex;
+    align-items: center;
     gap: 1.5rem;
 }
 
@@ -79,6 +80,7 @@ nav {
 .nav-link.active {
     color: var(--nav-text-active);
     text-shadow: 0 0 0.5px currentColor, 0 0 0.5px currentColor;
+    font-size: 1rem;
 }
 
 /* Header */
@@ -191,9 +193,10 @@ main {
 }
 
 .research-topics {
-    list-style: none;
+    list-style: circle;
     columns: 2;
     column-gap: 1rem;
+    margin-left: 1rem;
 }
 
 .research-topics li {
@@ -204,7 +207,6 @@ main {
 }
 
 .research-topics li::before {
-    content: '—';
     position: absolute;
     left: 0;
     color: var(--text-dim);
